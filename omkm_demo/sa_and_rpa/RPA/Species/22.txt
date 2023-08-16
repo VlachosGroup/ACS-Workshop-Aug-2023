@@ -1,0 +1,108 @@
+digraph G {
+splines = true;
+graph [bgcolor=lightgray, resolution=64, fontname=Arial, fontcolor=blue, fontsize=36];
+node [fontsize=12];
+edge [fontsize=30];
+label = "Reaction Path Analysis";
+labelloc = "t";
+center=1;
+size="10,10";
+ranksep="0.25 equally";
+nodesep="0.25 equally";
+rankdir=LR;
+bgcolor=white;
+"PT(S)"[shape=rectangle,style=filled,fontsize=35,width=0,height=0,fillcolor=lawngreen,URL="22.svg",shape=plaintext];
+"CH2CH3(S)"[shape=rectangle,style=filled,fontsize=35,width=0,height=0,fillcolor=dodgerblue,URL="7.svg",shape=plaintext];
+edge[dir="forward",style="setlinewidth(4)",color=black,weight=2,arrowsize=2,label="   0   64%   4.764894e-08 mol/s    7.609369e-01"];
+"PT(S)"->"CH2CH3(S)"
+"H(S)"[shape=rectangle,style=filled,fontsize=35,width=0,height=0,fillcolor=springgreen,URL="9.svg",shape=plaintext];
+edge[dir="forward",style="setlinewidth(4)",color=black,weight=2,arrowsize=2,label="   0   64%   4.764894e-08 mol/s    7.609369e-01"];
+"PT(S)"->"H(S)"
+"CH2CH2(S)"[shape=rectangle,style=filled,fontsize=35,width=0,height=0,fillcolor=dodgerblue,URL="12.svg",shape=plaintext];
+edge[dir="forward",style="setlinewidth(2)",color=green,weight=2,arrowsize=1,label="   1   30%   4.533909e-08 mol/s    4.997487e-01"];
+"CH2CH2(S)"->"PT(S)"
+"CHCH(S)"[shape=rectangle,style=filled,fontsize=35,width=0,height=0,fillcolor=springgreen,URL="18.svg",shape=plaintext];
+edge[dir="forward",style="setlinewidth(1)",color=green,weight=2,arrowsize=1,label="   2   0%   9.003342e-10 mol/s    4.999376e-01"];
+"CHCH(S)"->"PT(S)"
+"CH4(S)"[shape=rectangle,style=filled,fontsize=35,width=0,height=0,fillcolor=dodgerblue,URL="21.svg",shape=plaintext];
+edge[dir="forward",style="setlinewidth(1)",color=green,weight=2,arrowsize=1,label="   3   1%   2.819017e-09 mol/s    4.995735e-01"];
+"CH4(S)"->"PT(S)"
+"H(S)"[shape=rectangle,style=filled,fontsize=35,width=0,height=0,fillcolor=springgreen,URL="9.svg",shape=plaintext];
+edge[dir="forward",style="setlinewidth(4)",color=green,weight=2,arrowsize=2,label="   4   61%   4.573025e-08 mol/s    4.980556e-01"];
+"H(S)"->"PT(S)"
+"C(S)"[shape=rectangle,style=filled,fontsize=35,width=0,height=0,fillcolor=orange,URL="16.svg",shape=plaintext];
+edge[dir="forward",style="setlinewidth(1)",color=black,weight=2,arrowsize=1,label="   10   0%   9.105356e-10 mol/s    9.839688e-01"];
+"PT(S)"->"C(S)"
+"CH3(S)"[shape=rectangle,style=filled,fontsize=35,width=0,height=0,fillcolor=dodgerblue,URL="8.svg",shape=plaintext];
+edge[dir="forward",style="setlinewidth(1)",color=black,weight=2,arrowsize=1,label="   10   0%   9.105356e-10 mol/s    9.839688e-01"];
+"PT(S)"->"CH3(S)"
+"CCH2(S)"[shape=rectangle,style=filled,fontsize=35,width=0,height=0,fillcolor=lawngreen,URL="17.svg",shape=plaintext];
+edge[dir="forward",style="setlinewidth(1)",color=green,weight=2,arrowsize=1,label="   11   0%   8.680958e-10 mol/s    5.000157e-01"];
+"PT(S)"->"CCH2(S)"
+"H(S)"[shape=rectangle,style=filled,fontsize=35,width=0,height=0,fillcolor=springgreen,URL="9.svg",shape=plaintext];
+edge[dir="forward",style="setlinewidth(1)",color=green,weight=2,arrowsize=1,label="   11   0%   8.680958e-10 mol/s    5.000157e-01"];
+"PT(S)"->"H(S)"
+"C(S)"[shape=rectangle,style=filled,fontsize=35,width=0,height=0,fillcolor=orange,URL="16.svg",shape=plaintext];
+edge[dir="forward",style="setlinewidth(1)",color=green,weight=2,arrowsize=1,label="   12   0%   1.00256e-09 mol/s    4.999892e-01"];
+"C(S)"->"PT(S)"
+"H(S)"[shape=rectangle,style=filled,fontsize=35,width=0,height=0,fillcolor=springgreen,URL="9.svg",shape=plaintext];
+edge[dir="forward",style="setlinewidth(1)",color=green,weight=2,arrowsize=1,label="   12   0%   1.00256e-09 mol/s    4.999892e-01"];
+"H(S)"->"PT(S)"
+"CH(S)"[shape=rectangle,style=filled,fontsize=35,width=0,height=0,fillcolor=red,URL="13.svg",shape=plaintext];
+edge[dir="forward",style="setlinewidth(1)",color=green,weight=2,arrowsize=1,label="   13   1%   1.806527e-09 mol/s    4.999977e-01"];
+"CH(S)"->"PT(S)"
+"H(S)"[shape=rectangle,style=filled,fontsize=35,width=0,height=0,fillcolor=springgreen,URL="9.svg",shape=plaintext];
+edge[dir="forward",style="setlinewidth(1)",color=green,weight=2,arrowsize=1,label="   13   1%   1.806527e-09 mol/s    4.999977e-01"];
+"H(S)"->"PT(S)"
+"CHCH2(S)"[shape=rectangle,style=filled,fontsize=35,width=0,height=0,fillcolor=dodgerblue,URL="15.svg",shape=plaintext];
+edge[dir="forward",style="setlinewidth(1)",color=green,weight=2,arrowsize=1,label="   15   0%   5.227855e-10 mol/s    5.054177e-01"];
+"PT(S)"->"CHCH2(S)"
+"H(S)"[shape=rectangle,style=filled,fontsize=35,width=0,height=0,fillcolor=springgreen,URL="9.svg",shape=plaintext];
+edge[dir="forward",style="setlinewidth(1)",color=green,weight=2,arrowsize=1,label="   15   0%   5.227855e-10 mol/s    5.054177e-01"];
+"PT(S)"->"H(S)"
+"CH2CH2(S)"[shape=rectangle,style=filled,fontsize=35,width=0,height=0,fillcolor=dodgerblue,URL="12.svg",shape=plaintext];
+edge[dir="forward",style="setlinewidth(2)",color=black,weight=2,arrowsize=1,label="   17   30%   4.586188e-08 mol/s    9.986081e-01"];
+"PT(S)"->"CH2CH2(S)"
+"H(S)"[shape=rectangle,style=filled,fontsize=35,width=0,height=0,fillcolor=springgreen,URL="9.svg",shape=plaintext];
+edge[dir="forward",style="setlinewidth(2)",color=black,weight=2,arrowsize=1,label="   17   30%   4.586188e-08 mol/s    9.986081e-01"];
+"PT(S)"->"H(S)"
+"CHCH3(S)"[shape=rectangle,style=filled,fontsize=35,width=0,height=0,fillcolor=dodgerblue,URL="11.svg",shape=plaintext];
+edge[dir="forward",style="setlinewidth(1)",color=black,weight=2,arrowsize=1,label="   18   1%   1.786731e-09 mol/s    9.986373e-01"];
+"PT(S)"->"CHCH3(S)"
+"H(S)"[shape=rectangle,style=filled,fontsize=35,width=0,height=0,fillcolor=springgreen,URL="9.svg",shape=plaintext];
+edge[dir="forward",style="setlinewidth(1)",color=black,weight=2,arrowsize=1,label="   18   1%   1.786731e-09 mol/s    9.986373e-01"];
+"PT(S)"->"H(S)"
+"CH3(S)"[shape=rectangle,style=filled,fontsize=35,width=0,height=0,fillcolor=dodgerblue,URL="8.svg",shape=plaintext];
+edge[dir="forward",style="setlinewidth(1)",color=black,weight=2,arrowsize=1,label="   19   1%   2.819017e-09 mol/s    5.253494e-02"];
+"CH3(S)"->"PT(S)"
+"H(S)"[shape=rectangle,style=filled,fontsize=35,width=0,height=0,fillcolor=springgreen,URL="9.svg",shape=plaintext];
+edge[dir="forward",style="setlinewidth(1)",color=black,weight=2,arrowsize=1,label="   19   1%   2.819017e-09 mol/s    5.253494e-02"];
+"H(S)"->"PT(S)"
+"CH2(S)"[shape=rectangle,style=filled,fontsize=35,width=0,height=0,fillcolor=dodgerblue,URL="10.svg",shape=plaintext];
+edge[dir="forward",style="setlinewidth(1)",color=black,weight=2,arrowsize=1,label="   20   1%   1.900681e-09 mol/s    1.620018e-02"];
+"CH2(S)"->"PT(S)"
+"H(S)"[shape=rectangle,style=filled,fontsize=35,width=0,height=0,fillcolor=springgreen,URL="9.svg",shape=plaintext];
+edge[dir="forward",style="setlinewidth(1)",color=black,weight=2,arrowsize=1,label="   20   1%   1.900681e-09 mol/s    1.620018e-02"];
+"H(S)"->"PT(S)"
+"CH(S)"[shape=rectangle,style=filled,fontsize=35,width=0,height=0,fillcolor=red,URL="13.svg",shape=plaintext];
+edge[dir="forward",style="setlinewidth(1)",color=green,weight=2,arrowsize=1,label="   22   0%   3.937816e-10 mol/s    5.000230e-01"];
+"PT(S)"->"CH(S)"
+"CCH2(S)"[shape=rectangle,style=filled,fontsize=35,width=0,height=0,fillcolor=lawngreen,URL="17.svg",shape=plaintext];
+edge[dir="forward",style="setlinewidth(1)",color=green,weight=2,arrowsize=1,label="   23   0%   7.760372e-10 mol/s    4.999453e-01"];
+"CCH2(S)"->"PT(S)"
+"H(S)"[shape=rectangle,style=filled,fontsize=35,width=0,height=0,fillcolor=springgreen,URL="9.svg",shape=plaintext];
+edge[dir="forward",style="setlinewidth(1)",color=green,weight=2,arrowsize=1,label="   23   0%   7.760372e-10 mol/s    4.999453e-01"];
+"H(S)"->"PT(S)"
+"CHCH(S)"[shape=rectangle,style=filled,fontsize=35,width=0,height=0,fillcolor=springgreen,URL="18.svg",shape=plaintext];
+edge[dir="forward",style="setlinewidth(1)",color=green,weight=2,arrowsize=1,label="   25   0%   1.294133e-09 mol/s    5.025790e-01"];
+"PT(S)"->"CHCH(S)"
+"H(S)"[shape=rectangle,style=filled,fontsize=35,width=0,height=0,fillcolor=springgreen,URL="9.svg",shape=plaintext];
+edge[dir="forward",style="setlinewidth(1)",color=green,weight=2,arrowsize=1,label="   25   0%   1.294133e-09 mol/s    5.025790e-01"];
+"PT(S)"->"H(S)"
+"CCH3(S)"[shape=rectangle,style=filled,fontsize=35,width=0,height=0,fillcolor=lawngreen,URL="14.svg",shape=plaintext];
+edge[dir="forward",style="setlinewidth(1)",color=green,weight=2,arrowsize=1,label="   26   1%   1.778631e-09 mol/s    5.000377e-01"];
+"PT(S)"->"CCH3(S)"
+"H(S)"[shape=rectangle,style=filled,fontsize=35,width=0,height=0,fillcolor=springgreen,URL="9.svg",shape=plaintext];
+edge[dir="forward",style="setlinewidth(1)",color=green,weight=2,arrowsize=1,label="   26   1%   1.778631e-09 mol/s    5.000377e-01"];
+"PT(S)"->"H(S)"
+}
