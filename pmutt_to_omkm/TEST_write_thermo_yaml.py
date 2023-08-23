@@ -30,6 +30,8 @@ from pmutt.io.omkm import write_thermo_yaml
 
 from pmutt.io.omkm import write_cti
 
+from pmutt.io.omkm import write_yaml
+
 units = Units(length='cm', quantity='mol', act_energy='kcal/mol',
               mass='g', energy='kcal')
 
@@ -142,16 +144,21 @@ for phase_data in phases_data:
     phases.append(phase)
 
 
-output_path = './outputs/input_Spyder_GRW.cti'
+output_path = './outputs/input.cti'
 use_motz_wise = True
 
 write_cti(reactions=reactions, species=species, phases=phases, units=units,
           lateral_interactions=interactions, filename=output_path,
           use_motz_wise=use_motz_wise)
 
-output_path = './outputs/thermo_spyder_GRW.yaml'
+output_path = './outputs/thermo.yaml'
 use_motz_wise = True
 
 write_thermo_yaml(reactions=reactions, species=species, phases=phases,
                   units=units, lateral_interactions=interactions,
                   filename=output_path, use_motz_wise=use_motz_wise)
+
+Path('./outputs').mkdir(exist_ok=True)
+yaml_path = './outputs/reactor.yaml'
+reactor_data = read_excel(io=input_path, sheet_name='reactor')[0]
+write_yaml(filename=yaml_path, phases=phases, units=units, **reactor_data)
